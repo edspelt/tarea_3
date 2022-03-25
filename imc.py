@@ -33,7 +33,7 @@ def run():
             print ('peso NOrmal')
         elif calc2 >24.9 and calc2<=29.9:
             print('Peso SUperior al Normal')
-        else:
+        elif calc2>29.9:
             print('Obesidad')
 
 
