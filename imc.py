@@ -6,8 +6,8 @@ def run():
                 2. Libras y Pulgadas
                 """))
     if um == 1 :
-        altura_metro=float(input('Favor ingrese su altura en metros: '))
-        peso_kg=float (input('Favor ingrese su peso en kg: '))
+        altura_metro=float(input('Favor ingrese su altura en metros: Ej: 1.75 '))
+        peso_kg=float (input('Favor ingrese su peso en kg: Ej 55 '))
         print ('su indice de masa musular es: ')
         calc=peso_kg//altura_metro**2
         print (calc)
@@ -21,8 +21,8 @@ def run():
             print('Obesidad')
 
     elif um==2:   
-        estatura=float(input('Favor ingrese su altura en Pulgadas: '))
-        peso=float (input('Favor ingrese su peso en Libras: '))
+        estatura=float(input('Favor ingrese su altura en Pulgadas: ej: 65'))
+        peso=float (input('Favor ingrese su peso en Libras: ej: 150'))
         print ('su indice de masa muscular es: ')
         calc=peso/estatura**2
         calc2=calc*703
