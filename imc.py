@@ -1,3 +1,5 @@
+from colorama import Fore, Back, Style
+
 def run():
    
     um= int(input ("""
@@ -8,17 +10,17 @@ def run():
     if um == 1 :
         altura_metro=float(input('Favor ingrese su altura en metros: Ej: 1.75 '))
         peso_kg=float (input('Favor ingrese su peso en kg: Ej 55 '))
-        print ('su indice de masa musular es: ')
+        print ('su indice de masa muscular es: ')
         calc=peso_kg//altura_metro**2
         print (calc)
         if calc < 18.5:
-            print ('Peso inferior al normal')
+            print (Fore.WHITE+Back.BLUE+'Peso inferior al normal')
         elif calc >18.5 and calc <=24.9:
-            print ('peso NOrmal')
+            print (Fore.WHITE+Back.GREEN+'peso Normal')
         elif calc >24.9 and calc<=29.9:
-            print('Peso SUperior al Normal')
-        else:
-            print('Obesidad')
+            print(Fore.WHITE+Back.YELLOW+'Peso Superior al Normal')
+        elif calc2>29.9:
+            print(Fore.WHITE+Back.RED+'Obesidad')
 
     elif um==2:   
         estatura=float(input('Favor ingrese su altura en Pulgadas: ej: 65'))
@@ -28,13 +30,13 @@ def run():
         calc2=calc*703
         print (calc2)
         if calc2 < 18.5:
-            print ('Peso inferior al normal')
+            print (Fore.WHITE+Back.BLUE+'Peso inferior al normal')
         elif calc2 >18.5 and calc2 <=24.9:
-            print ('peso NOrmal')
+            print (Fore.WHITE+Back.GREEN+'peso Normal')
         elif calc2 >24.9 and calc2<=29.9:
-            print('Peso SUperior al Normal')
+            print(Fore.WHITE+Back.YELLOW+'Peso Superior al Normal')
         elif calc2>29.9:
-            print('Obesidad')
+            print(Fore.WHITE+Back.RED+'Obesidad')
 
 
 
